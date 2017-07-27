@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/customer/customer"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#333",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/customer.png",
+        "selectedIconPath": "images/customer-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/customer/customer",
+        "iconPath": "images/customer.png",
+        "selectedIconPath": "images/customer-active.png",
+        "text": "客户"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/customer.png",
+        "selectedIconPath": "images/customer-active.png",
+        "text": "日志"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 30000,
+    "uploadFile": 30000,
+    "downloadFile": 30000
+  }
+}

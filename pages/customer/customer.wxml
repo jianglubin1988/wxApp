@@ -1,0 +1,9 @@
+<!--customer.wxml-->
+<view class="container">
+  <view class="top">
+    <text>customer.wxml</text>
+  </view>
+  <view class="bottom">
+    <button bindtap="goBack">返回</button>
+  </view>
+</view>
