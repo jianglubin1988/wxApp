@@ -3,7 +3,20 @@
   <view class="top">
     <text>customer.wxml</text>
   </view>
+  <view class="content">
+    <view>
+      <text>{{mobile}}</text>
+    </view>
+    <view>
+      <text>{{code}}</text>
+    </view>
+    
+    
+  </view>
   <view class="bottom">
+    <button bindtap="getCode">获取code</button>
     <button bindtap="goBack">返回</button>
   </view>
+
+  
 </view>

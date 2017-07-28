@@ -5,11 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    mobile: '13940598389',
+    code: '0'
   },
 
   goBack: function(){
     wx.navigateBack();
+  },
+
+  getCode: function(){
+    this.setData({
+      code: '123456'
+    })
   },
 
   /**
