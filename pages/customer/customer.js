@@ -1,4 +1,6 @@
 // customer.js
+
+var core = require('../../utils/core.js');
 Page({
 
   /**
@@ -14,8 +16,21 @@ Page({
   },
 
   getCode: function(){
+    console.log(core.baseUrl);
     this.setData({
-      code: '123456'
+      code: core.baseUrl
+    })
+
+    core.post('/admin/register/checkUsername',{'username':'13940598389'},{
+      onSuccess: function(result){
+        console.log('on success');
+      },
+      onFail: function(result){
+        console.log('on fail');
+      },
+      onComplete: function(result){
+        console.log('on complete');
+      }
     })
   },
 
